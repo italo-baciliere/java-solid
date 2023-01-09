@@ -55,10 +55,25 @@ public interface ValidacaoReajuste {
 }
 ```
 
-
-
 ### Liskov Substitution Principle
+
+
 
 ### Interface Segregation Principle
 
+Classes não devem ser obrigadas a implementar métodos que não irão precisar.
+
 ### Dependency Inversion Principle
+
+Caso uma determinada implementação mude, não seremos afetados, pois dependemos apenas de sua interface.
+
+```Java
+private List<ValidacaoReajuste> validacoes;
+ 
+public void reajustarSalarioDoFuncionario(Funcionario funcionario, BigDecimal aumento) {
+  this.validacoes.forEach(v -> v.validar(funcionario, aumento));
+		
+	BigDecimal salarioReajustado = funcionario.getSalario().add(aumento);
+	funcionario.atualizarSalario(salarioReajustado);
+}
+```
