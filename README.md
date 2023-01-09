@@ -22,4 +22,3 @@ Master solid code principles.
 
 [freecodecamp](https://www.freecodecamp.org/portuguese/news/os-principios-solid-da-programacao-orientada-a-objetos-explicados-em-bom-portugues/)
 
-[Alura Project](https://cursos.alura.com.br/course/solid-orientacao-objetos-java/task/85764)
